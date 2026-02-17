@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShopEase - Online Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar */
+        header {
+            background: #222;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff9800;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+        }
+
+        /* Products */
+        .products {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .products h2 {
+            margin-bottom: 30px;
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product-card {
+            background: white;
+            width: 250px;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            color: green;
+            font-weight: bold;
+        }
+
+        .product-card button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            background: #ff9800;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .product-card button:hover {
+            background: #e68900;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <h1>ShopEase</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to ShopEase <br> Your One-Stop Online Store</h2>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-container">
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Product">
+                <h3>Wireless Headphones</h3>
+                <p>₹1999</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Product">
+                <h3>Smart Watch</h3>
+                <p>₹2999</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Product">
+                <h3>Sports Shoes</h3>
+                <p>₹2499</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 ShopEase | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
